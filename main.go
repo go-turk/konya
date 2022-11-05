@@ -22,5 +22,4 @@ func main() {
 		fmt.Println("Backend Lv2 Rozeti Eklenemedi", err)
 		return
 	}
-	fmt.Println(backendLv2Rozeti)
 }
