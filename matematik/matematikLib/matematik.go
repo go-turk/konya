@@ -5,7 +5,7 @@ type Matematik interface {
 	Cikar(a, b int) int
 	Carp(a, b int) int
 	Bol(a, b int) int
-	UssuAl(a, b int) int
+	UssuAl(a, b int) float64
 }
 
 type matematik struct {
@@ -46,7 +46,9 @@ func (m *matematik) Bol(a, b int) int {
 	return sonuc
 }
 
-func (m *matematik) UssuAl(a, b int) int {
-
-	return -1
+// a^b => a = 2 ve b = 3 ise sonuc 8 olmalı
+// Eksili işlemler şu anda 0 dönecek şekilde tasarlanabilir.
+// a = 5 ve b = -1 => sonuc 0.2 olmalı
+func (m *matematik) UssuAl(a, b int) float64 {
+	return -1.0
 }
