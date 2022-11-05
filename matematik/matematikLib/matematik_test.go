@@ -80,3 +80,7 @@ func TestMatematik_Carp(t *testing.T) {
 func TestMatematik_Bol(t *testing.T) {
 
 }
+
+func TestMatematik_UssuAl(t *testing.T) {
+	// TODO: UssuAl fonksiyonu için test yazınız
+}

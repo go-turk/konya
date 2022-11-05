@@ -5,6 +5,7 @@ type Matematik interface {
 	Cikar(a, b int) int
 	Carp(a, b int) int
 	Bol(a, b int) int
+	UssuAl(a, b int) int
 }
 
 type matematik struct {
@@ -43,4 +44,9 @@ func (m *matematik) Bol(a, b int) int {
 	sonuc := a / b
 	m.sonuclar = append(m.sonuclar, sonuc)
 	return sonuc
+}
+
+func (m *matematik) UssuAl(a, b int) int {
+
+	return -1
 }
