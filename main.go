@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/go-turk/konya/database"
 	"github.com/go-turk/konya/urun"
+	"github.com/go-turk/konya/user"
 )
 
 func main() {
@@ -22,4 +23,13 @@ func main() {
 		fmt.Println("Backend Lv2 Rozeti Eklenemedi", err)
 		return
 	}
+
+	userRepo, err := user.NewUserRepository(db)
+	if err != nil {
+		fmt.Println("userRepo hatası!!!", err)
+	}
+
+	kullanici1 := user.NewUser("fahrettin", "fahrettin123")
+	userRepo.Create(kullanici1)
+
 }

@@ -5,7 +5,7 @@ services:
     container_name: postgres
     restart: always
     environment:
-      POSTGRES_PASSWORD: acTest123
+      POSTGRES_PASSWORD: go
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -15,7 +15,7 @@ services:
     container_name: pgAdmin
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: alameddinc@gmail.com
+      PGADMIN_DEFAULT_EMAIL: takim1@takim1.com
       PGADMIN_DEFAULT_PASSWORD: postgres
     ports:
       - "5050:80"
